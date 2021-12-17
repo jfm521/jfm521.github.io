@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="icon.png">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.min.js"></script>
+        <script src="script.js"></script>
+        <title> Portfolio </title>
+    </head>
+
+    <body>
+        <header>
+            <div class="grid-container">
+                <div class="item1">
+                    <p> JACKIE MURRAY </p>
+                    <p>GAME WRITER & DESIGNER </p>
+                </div>
+                <div class="item2">
+                    <a href="" id="currentpage"> PORTFOLIO </a>
+                    <a href="about.html"> ABOUT </a>
+                    <a href="JackieMurrayResume.pdf"> RESUME </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="grid-container">
+                <div class="item3">
+                    <div class="gallery" width="15%">
+                        <img src="bananaland_thumb.png" alt="Tag! In Bananaland thumbnail image" onclick="changeInfo(0)" class="galleryimg" style="filter:brightness(1);">
+                    </div>
+                    <!--<div class="gallery" width="15%">
+                        <img src="bounty_thumb.png" alt="Bounty thumbnail image" onclick="changeInfo(1)" class="galleryimg" style="filter:brightness(1);">
+                    </div>-->
+                    <div class="gallery" width="15%">
+                        <img src="mobydick_thumb.png" alt="Moby Dick thumbnail image" onclick="changeInfo(1)" class="galleryimg" style="filter:brightness(1);">
+                    </div>
+                    <div class="gallery" width="15%">
+                        <img src="zoomgame_thumb.png" alt="Zoomgame 1.0 thumbnail image" onclick="changeInfo(2)" class="galleryimg" style="filter:brightness(1);">
+                    </div>
+                    <!--<div class="gallery" width="15%">
+                        <img src="blank_thumb.png" alt="placeholder thumbnail image" width="100%" onclick="changeInfo(4)" class="galleryimg" style="filter:brightness(1);">
+                    </div>
+                    <div class="gallery" width="15%">
+                        <img src="blank_thumb.png" alt="placeholder thumbnail image" width="100%" onclick="changeInfo(5)" class="galleryimg" style="filter:brightness(1);">
+                    </div>
+                    <div class="gallery" width="15%">
+                        <img src="blank_thumb.png" alt="placeholder thumbnail image" width="100%" onclick="changeInfo(6)" class="galleryimg" style="filter:brightness(1);">
+                    </div>-->
+                </div>
+                <div class="item4">
+                    <iframe id="video" width="747vw" height="420vh" src="null" title="Game video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                </div>
+                <div class="item5">
+                    <h1 id="infotitle"> info here </h1>
+                    <h2 id="infosubtitle"> subtitle here </h2>
+                    <p id="info"> info here </p>
+                </div>
+                <div class="item6">
+                    <div><a href="" id="gamelink"> GAME LINK! </a></div>
+                </div>
+                <div class="item7">
+
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <!-- I don't want or need a footer, but here's a comment so you know I know how to use it -->
+        </footer>
+    </body>
+
+
+</html>

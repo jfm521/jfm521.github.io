@@ -1,0 +1,392 @@
+@media only screen and (min-width: 1001px){
+
+    body{
+        margin: 0px;
+    }
+
+    .item1{
+        display: flex;
+        grid-area: title;
+        background-color: #00ffaf;
+        padding-left: 15px;
+        padding-right: 15px;
+        white-space: nowrap;
+    }
+
+    .item1 > p {
+        font-size: 25px;
+        line-height: 0px;
+        color: #000000;
+        font-family: 'Readex Pro', sans-serif;
+        font-weight: 1000;
+        margin-right: 20px;
+    }
+
+    .item2{
+        display: flex;
+        justify-content: flex-end;
+        grid-area: navbar;
+        background-color: #00ffaf;
+        /*padding-left: 15px;
+        padding-right: 15px;*/
+    }
+
+    .item2 > a { /* figure out why link font isn't as heavy as title font */
+        font-size: 25px;
+        line-height: 50px;
+        font-family: 'Readex Pro', sans-serif;
+        text-decoration: none;
+        color: #00ffaf;
+        background-color: #000000;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: 5px;
+        /*margin-right: 5px;*/
+    }
+
+    .item2 > a:hover{
+        font-weight: 1000;
+        color: #000000;
+        background-color: #ffffff;
+    }
+
+    #currentpage{
+        font-weight: 1000;
+        color: #000000;
+        background-color: #ffffff;
+    }
+
+    .item3{
+        grid-area: gallery;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 0px;
+    }
+
+    .item3 > div{
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        width: 20vw;
+    }
+
+    .item3 > div > img{
+        width: 100%;
+    }
+    /*
+    .gallery{
+        filter: brightness(.9);
+    }
+
+    .gallery:hover{
+        filter: brightness(1.1);
+    }
+*/
+    .item4{
+        grid-area: info_vid;
+        display: flex;
+        padding-left: 20px;
+        padding-top: 30px;
+        background-color: #dedede;
+    }
+
+    .item5{
+        grid-area: info_title;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        background-color: #dedede;
+    }
+
+    .item5 > h1{
+        font-family: 'Readex Pro', sans-serif;
+        font-size: 40px;
+    }
+
+    .item5 > h2{
+        font-family: 'Georgia', serif;
+        font-size: 20px;
+        font-weight: 1000;
+        font-style: normal;
+        line-height: 0px;
+    }
+
+    .item5 > p{
+        font-family: 'Georgia', serif;
+        font-sixe: 25px;
+    }
+
+    .item6{
+        grid-area: info_link;
+        display: flex;
+        justify-content: center;
+        background-color: #dedede;
+        padding-bottom: 20px;
+    }
+
+    .item6 > div{
+        padding-right: 80px;
+    }
+
+    .item6 > div> a{
+        font-family: 'Readex Pro', sans-serif;
+        background-color: #00ffaf;
+        width: 30vw;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        font-size: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .item7{
+        grid-area: info_text;
+        background-color: #dedede;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 30px;
+    }
+
+    .item7 > p{
+        font-family: 'Georgia', serif;
+    }
+
+    .item7 > p > a{
+        text-decoration: none;
+        background-color: black;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: #dedede;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+            'title title title navbar'
+            'gallery gallery gallery gallery'
+            'info_vid info_title info_title info_title'
+            'info_vid info_link info_link info_link'
+            'info_text info_text info_text info_text';
+        grid-gap: 0px;
+        background-color: #ffffff;
+    }
+
+    .grid-container > div{
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px){
+
+    body{
+        margin: 0px;
+    }
+
+    .item1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-area: title;
+        background-color: #00ffaf;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    .item1 > p {
+        font-size: 30px;
+        line-height: 0px;
+        color: #000000;
+        font-family: 'Readex Pro', sans-serif;
+        font-weight: 1000;
+        text-align: center;
+    }
+
+    .item2{
+        display: flex;
+        justify-content: center;
+        grid-area: navbar;
+        background-color: #00ffaf;
+        /*padding-left: 15px;
+        padding-right: 15px;*/
+    }
+
+    .item2 > a { /* figure out why link font isn't as heavy as title font */
+        font-size: 27px;
+        line-height: 50px;
+        font-family: 'Readex Pro', sans-serif;
+        text-decoration: none;
+        color: #00ffaf;
+        background-color: #000000;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+    .item2 > a:hover{
+        font-weight: 1000;
+        color: #000000;
+        background-color: #ffffff;
+    }
+
+    #currentpage{
+        font-weight: 1000;
+        color: #000000;
+        background-color: #ffffff;
+    }
+
+    .item3{
+        grid-area: gallery;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        /*padding-left: 10px;
+        padding-right: 10px;*/
+        padding-bottom: 30px;
+        margin-bottom: 0px;
+    }
+
+    .item3 > div{
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .item3 > div > img{
+        width: 25vw;
+    }
+    /*
+    .gallery{
+        filter: brightness(.9);
+    }
+
+    .gallery:hover{
+        filter: brightness(1.1);
+    }
+*/
+    .item4{
+        grid-area: info_vid;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        background-color: #dedede;
+    }
+
+    .item5{
+        grid-area: info_title;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        background-color: #dedede;
+    }
+
+    .item5 > h1{
+        font-family: 'Readex Pro', sans-serif;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .item5 > h2{
+        font-family: 'Georgia', serif;
+        font-size: 20px;
+        font-weight: 1000;
+        font-style: normal;
+        line-height: 0px;
+        text-align: center;
+    }
+
+    .item5 > p{
+        font-family: 'Georgia', serif;
+        font-sixe: 25px;
+    }
+
+    .item6{
+        grid-area: info_link;
+        display: flex;
+        justify-content: center;
+        background-color: #dedede;
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+
+    .item6 > div{
+        /*padding-right: 80px;*/
+    }
+
+    .item6 > div> a{
+        font-family: 'Readex Pro', sans-serif;
+        background-color: #00ffaf;
+        width: 30vw;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        font-size: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .item7{
+        grid-area: info_text;
+        justify-content: center;
+        background-color: #dedede;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 30px;
+    }
+
+    .item7 > p{
+        font-family: 'Georgia', serif;
+    }
+
+    .item7 > p > a{
+        text-decoration: none;
+        background-color: black;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: #dedede;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+            'title'
+            'navbar'
+            'gallery'
+            'info_vid'
+            'info_title'
+            'info_link'
+            'info_text';
+        grid-gap: 0px;
+        background-color: #ffffff;
+    }
+
+    .grid-container > div{
+
+    }
+
+}
